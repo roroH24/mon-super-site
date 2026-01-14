@@ -1,0 +1,236 @@
+* {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#a{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+body{
+    background-color:rgba(232, 226, 221, 0.281) ;
+}
+header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: white;
+ position: sticky;
+ top: 0;
+  z-index: 1000;
+}
+nav{
+display: flex;
+gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+
+}
+a:hover{
+    color: rgb(224, 92, 92);
+}
+/* section page1 */
+.page1{
+    background-color: rgb(19, 19, 19);
+    padding: 40px;
+    border-radius: 30px;
+    color: white;
+}
+.page1 h2{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    width: 100%;
+}
+.page1 h1{
+    font-size: 8rem;
+    font-weight: bolder;
+    width: 50%
+}
+.image{
+ 
+}
+#img{
+    left: 51%;
+    position: absolute;
+    bottom: 8rem
+
+}
+/* services */
+.nos-servvice{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.services{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    
+    margin-top: 1rem;
+    border-radius: 40px;
+}
+.service{
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(255, 251, 251);
+    color: rgb(13, 13, 13);
+    border-radius: 30px;
+}
+.service img{
+    margin-top: 20px;
+    background-color: none;
+}
+.service h3{
+    font-size: 1.5rem;
+    margin: 10p;
+    color: rgb(17, 135, 204);
+}
+.service p{
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+.minipage3 {
+
+    padding: 2%;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 2rem;
+}
+.minipage3 h1{
+    font-size: 6em;
+    font-weight: bolder;
+    color: rgb(21, 16, 16);
+    width: 100%;
+}
+.page4{
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+.page4 h1{text-align: center;
+font-size: 4rem;}
+.menu-detjr{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+
+
+}
+.menu-detjr img{
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+}
+#btn button{
+    background-color: rgb(224, 92, 92);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+.page5{text-align: center;
+    
+    
+    
+margin-top: 2rem;
+
+}
+.page5 h1{
+    font-size: 1.5rem;
+}
+.minipage5{
+    display: flex;
+    gap: 1000px;
+    padding: 50px;
+    background-color: tomato;
+    border-radius: 5px;
+    
+    
+}
+.minipage5, .mnipage5{
+    flex: 5;
+    font-size: 2rem;
+}
+form button{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+form input, form textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 180%;
+  border-radius: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+.mnipage5{
+    margin-bottom: 10rem;
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* ---------------------- */
+/* Responsive rules */
+/* ---------------------- */
+@media (max-width: 1024px) {
+  .menu-detjr{ gap: 100px; }
+  .menu-detjr img{ width: 45%; height: auto; }
+  .page1 h1{ font-size: 5.5rem; }
+  .page1 h2{ font-size: 2.5rem; }
+  #img{ left: 55%; bottom: 6rem; width: 35%; }
+  .services{ flex-wrap: wrap; gap: 1rem; }
+  .service{ width: calc(33% - 40px); margin: 10px; }
+  .minipage5{ gap: 2rem; padding: 30px; }
+  .minipage5, .mnipage5{ font-size: 1.4rem; }
+  form input, form textarea{ width: 100%; }
+  .page4 h1{ font-size: 3rem; }
+  .minipage3 h1{font-size: 0.5rem;}
+}
+
+@media (max-width: 600px) {
+  header{ padding: 0.8rem; }
+  nav{ gap: 10px; font-size: 1rem; }
+  .page1{ padding: 20px; border-radius: 20px; }
+  .page1 h1{ font-size: 3.5rem; width: 100%; }
+  .page1 h2{ font-size: 1.6rem; }
+  #img{ position: static; width: 60%; left: auto; bottom: auto; margin: 1rem auto 0; display:block; }
+  .menu-detjr{ flex-direction: column; gap: 1rem; }
+  .menu-detjr img{ width: 100%; height: auto; }
+  .services{ flex-direction: column; }
+  .service{ width: 100%; margin: 10px 0; }
+  .minipage5{ flex-direction: column; gap: 1rem; padding: 20px; }
+  .minipage5, .mnipage5{ width: 90%; font-size: 1.2rem; }
+  form input, form textarea{ width: 90%; }
+  form button{ width: 80%; padding: 0.8rem; }
+  footer{ padding: 15px; flex-direction: column; gap: 10px; }
+}
